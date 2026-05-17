@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простая форма</title>
+</head>
+<body>
+
+    <h1>Форма регистрации</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Личные данные</legend>
+
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Электронная почта:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="comment">Комментарий:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
+
+            <label for="country">Страна:</label><br>
+            <select id="country" name="country">
+                <option>Россия</option>
+                <option>США</option>
+                <option>Канада</option>
+            </select><br><br>
+
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
