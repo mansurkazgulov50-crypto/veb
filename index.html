@@ -3,53 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Работа с селекторами</title>
+    <title>CSS Свойства</title>
 
     <style>
-        p {
-            color: blue;
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkred;
+        }
+
+        .small-text {
+            font-size: 14px;
+        }
+
+        .big-text {
+            font-size: 22px;
         }
 
         .bold-text {
             font-weight: bold;
         }
 
-        #main-title {
-            color: red;
+        .background-box {
+            background-color: lightblue;
+            background-image: url("https://www.google.com/imgres?imgurl=https://www.advantour.com/img/kazakhstan/images/nature.jpg&imgrefurl=https://www.advantour.com/rus/kazakhstan/nature.htm&h=600&w=900&tbnid=pL9SDnTVhOgHjM&source=sa.im&tbnh=452&tbnw=678&usg=AI4_-kQXvqdD1Zme565CwDfxY75yDqf6Lg&vet=1&docid=gFRv-hT3F2HtOM");
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            height: 200px;
         }
 
-        h2 {
-            color: green;
+        .box {
+            border: 3px solid black;
+            padding: 20px;
+            margin: 15px;
+            background-color: lightgray;
         }
 
-        .title-class {
-            color: orange;
+        .size-box {
+            width: 250px;
+            height: 120px;
+            border: 2px solid blue;
+            overflow: scroll;
+            margin-top: 20px;
+            padding: 10px;
         }
 
-        #title-id {
-            color: purple;
-        }
     </style>
 </head>
 <body>
-    <h1 id="main-title">Главный заголовок</h1>
-    <h2>Обычный заголовок h2</h2>
-    <p>Это первый абзац.</p>
-    <p class="bold-text">Это жирный абзац.</p>
-    <ul>
-        <li>Первый элемент</li>
-        <li class="bold-text">Второй элемент</li>
-        <li>Третий элемент</li>
-    </ul>
-    <h2 class="title-class" id="title-id">
-        Проверка приоритета селекторов
-    </h2>
 
-    <p>
-        Для последнего заголовка применится фиолетовый цвет,
-        потому что ID имеет больший приоритет,
-        чем класс и тег.
+    <h1>Главный заголовок</h1>
+    <h2>Подзаголовок</h2>
+
+    <p class="small-text">
+        Это маленький текст.
     </p>
+
+    <p class="big-text">
+        Это большой текст.
+    </p>
+
+    <p class="bold-text">
+        Этот абзац жирный.
+    </p>
+
+    <div class="background-box">
+        <h2>Блок с фоном</h2>
+        <p>Здесь используется background-color и background-image.</p>
+    </div>
+    <div class="box">
+        Первый блок с рамкой и отступами.
+    </div>
+    <div class="box">
+        Второй блок с рамкой и отступами.
+    </div>
+    <div class="size-box">
+        Это блок с фиксированными размерами.
+        Здесь очень много текста, поэтому появляется прокрутка.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
 
 </body>
 </html>
