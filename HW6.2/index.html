@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета пользователя</title>
+</head>
+<body>
+
+    <h2>Анкета</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Личные данные</legend>
+
+            <label for="userName">Ваше имя:</label><br>
+            <input type="text" id="userName" name="userName"><br><br>
+
+            <label for="mail">Электронная почта:</label><br>
+            <input type="email" id="mail" name="mail"><br><br>
+
+            <label for="pass">Пароль:</label><br>
+            <input type="password" id="pass" name="pass"><br><br>
+
+            <label for="comment">Комментарий:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="35"></textarea><br><br>
+
+            <label for="country">Страна:</label><br>
+            <select id="country" name="country">
+                <option>Казахстан</option>
+                <option>Россия</option>
+                <option>США</option>
+                <option>Канада</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
