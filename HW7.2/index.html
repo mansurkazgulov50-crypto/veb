@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с селекторами</title>
+
+    <style>
+        p {
+            color: blue;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        #main-title {
+            color: red;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        .title-class {
+            color: orange;
+        }
+
+        #title-id {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Главный заголовок</h1>
+    <h2>Обычный заголовок h2</h2>
+    <p>Это первый абзац.</p>
+    <p class="bold-text">Это жирный абзац.</p>
+    <ul>
+        <li>Первый элемент</li>
+        <li class="bold-text">Второй элемент</li>
+        <li>Третий элемент</li>
+    </ul>
+    <h2 class="title-class" id="title-id">
+        Проверка приоритета селекторов
+    </h2>
+
+    <p>
+        Для последнего заголовка применится фиолетовый цвет,
+        потому что ID имеет больший приоритет,
+        чем класс и тег.
+    </p>
+
+</body>
+</html>
